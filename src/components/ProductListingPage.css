@@ -1,0 +1,32 @@
+/* Hover effect */
+.product-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Center and limit image height */
+.image-wrapper {
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.product-image {
+  max-height: 200px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Clean card title */
+.product-title {
+  font-size: 1rem;
+  min-height: 48px;
+  line-height: 1.2;
+  overflow: hidden;
+}
